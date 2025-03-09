@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_assignment_05</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="random-bg-color" class="bg-[#2752fd13]">
+<!--Header Section starts-->
+
+    <header class="w-[95%] mx-auto p-6 bg-white rounded-lg mb-4">
+        <!--nav logo-->
+        <div class="flex justify-between">
+
+            <div class="flex space-x-2">
+                <img class="w-10" src="assets/logo.png" alt="logo">
+                <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <!--nav button-->
+            <div class="flex space-x-2">
+                <div class="flex space-x-2 bg-[#2752fd13] p-2 rounded-2xl">
+                    <img class="w-8" src="assets/checkbox.png" alt="checkbox">
+                    <p id="nav-task" class="font-bold text-xl">0</p>
+                </div>
+                <img id="img-btn" class="w-12 bg-[#2752fd13] p-2 rounded-full " src="assets/theme-btn.png" alt="">
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <!--Header section end-->
+
+    <!--Hero section starts-->
+
+    <!--discover something new section-->
+    <div class="w-[95%] mx-auto grid grid-cols-4 gap-3">
+    
+            <div class="col-span-3 flex space-x-4 bg-white p-5 rounded-lg mb-5 justify-evenly">
+                <!--Task assigned div-->
+                <div class="flex items-center space-x-4 py-4 px-10 bg-[#2752fd13] rounded-lg">
+                    <img class="bg-white p-2 rounded-xl" src="assets/checkbox.png" alt="checkbox">
+                <div>
+                    <p class="text-sm">Task Assigned</p>
+                    <h2 id="task" class="font-bold text-xl">6</h2>
+                </div>
+                </div>
+    
+                <!--discover somthing div-->
+    
+                <div class=" flex items-center py-4 px-10 rounded-lg bg-gradient-to-r from-[#3752FD] from-0% via-[#6C7FFA] via-50% to-[#9BA8F8] to-100% ...">
+                    <img class="w-15" src="assets/board.png" alt="calender">
+                    <h2 class="text-sm text-white">Discover Something New Today!</h2>
+                </div>
+    
+                <!--Wed date div-->
+                <div class="w-[25%] mx-auto flex items-center space-x-4 py-4 px-10 bg-[#2752fd13] rounded-lg">
+                    <img class="bg-white p-2 rounded-xl" src="assets/calender.png" alt="checkbox">
+                <div>
+                    <p id="current-day" class="text-sm">Wed,</p>
+                    <h2 id="current-time" class="font-bold text-sm">Jul 28 2025 </h2>
+                </div>
+                </div>
+            </div>
+
+
+
+             <!--Activity log section-->
+        <div id="activity-container" class="col-span-1 row-span-3 flex flex-col bg-white p-5 rounded-lg">
+            <div class="flex space-x-3 justify-center">
+                <img class="w-5" src="assets/activity.png" alt="activity">
+                <h2 class="text-sm">Activity Log</h2>
+            </div>
+            <button id="activity-btn" class="w-2/3 mx-auto px-3 py-2 mt-3 rounded-md text-white bg-[#3752FD] text-xs">Clear History</button>
+            <div>
+                <hr class="border-t-2 border-dashed border-[#2752fd19] w-full my-4">
+            </div>
+        </div>
+        
+
+            
+                <!-- Card section starts-->
+                 
+         
+ <div class="col-span-3 grid grid-cols-3 gap-3 bg-white p-6 rounded-lg">
+        <!--Cart 01-->
+        <div class="bg-[#2752fd13] p-5 rounded-xl">
+            <div class="flex flex-col space-y-5">
+                <a class="w-1/2 justify-start text-center p-2 rounded-lg text-sm bg-white" href="#">ShopEase</a>
+            <h2 class="text-xl font-medium">Fix Mobile Button Issue </h2>
+            <p class="truncate bg-white p-4 rounded-lg text-gray-500 text-sm">Debug using Chrome DevTools,overlapping elements, and ensure onClick works properly
+                and ensure onClick works properly</p>
+            </div>
+                <hr class="border-t-2 border-dashed border-[#2752fd19] w-full my-4">
+                <div class="flex justify-between items-center">
+                    <div class="space-y-1 font-medium">
+                        <p class="text-sm text-gray-600 font-normal">Deadline</p>
+                    <h3 class="text-sm">21 March 2025</h3>
+                    </div>
+                    <button class="complete-btn px-3 py-2 rounded-md bg-[#3752FD] text-white text-sm">Completed</button>
+                </div>
+        </div>
+        <!--Cart 02-->
+        <div class="bg-[#2752fd13] p-5 rounded-xl">
+            <div class="flex flex-col space-y-5">
+                <a class="w-1/2 justify-start text-center p-2 rounded-lg text-sm bg-white" href="#">CloudSync</a>
+            <h2 class="text-xl font-medium">Add Dark Mode </h2>
+            <p class="truncate bg-white p-4 rounded-lg text-gray-500 text-sm">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+            </div>
+                <hr class="border-t-2 border-dashed border-[#2752fd19] w-full my-4">
+                <div class="flex justify-between items-center">
+                    <div class="space-y-1 font-medium">
+                        <p class="text-sm text-gray-600 font-normal">Deadline</p>
+                    <h3 class="text-sm">21 March 2025</h3>
+                    </div>
+                    <button class="complete-btn px-3 py-2 rounded-md bg-[#3752FD] text-white text-sm">Completed</button>
+                </div>
+        </div>
+        <!--Cart 03-->
+        <div class="bg-[#2752fd13] p-5 rounded-xl">
+            <div class="flex flex-col space-y-5">
+                <a class="w-1/2 justify-start text-center p-2 rounded-lg text-sm bg-white" href="#">SwiftPay</a>
+            <h2 class="text-xl font-medium">Optimize  Home page </h2>
+            <p class="truncate bg-white p-4 rounded-lg text-gray-500 text-sm">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+            </div>
+                <hr class="border-t-2 border-dashed border-[#2752fd19] w-full my-4">
+                <div class="flex justify-between items-center">
+                    <div class="space-y-1 font-medium">
+                        <p class="text-sm text-gray-600 font-normal">Deadline</p>
+                    <h3 class="text-sm">21 March 2025</h3>
+                    </div>
+                    <button class="complete-btn px-3 py-2 rounded-md bg-[#3752FD] text-white text-sm">Completed</button>
+                </div>
+        </div>
+        <!--Cart 04-->
+        <div class="bg-[#2752fd13] p-5 rounded-xl">
+            <div class="flex flex-col space-y-5">
+                <a class="w-1/2 justify-start text-center p-2 rounded-lg text-sm bg-white" href="#">Meta</a>
+            <h2 class="text-xl font-medium">Add new emoji 🤲 </h2>
+            <p class="truncate bg-white p-4 rounded-lg text-gray-500 text-sm">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+            </div>
+                <hr class="border-t-2 border-dashed border-[#2752fd19] w-full my-4">
+                <div class="flex justify-between items-center">
+                    <div class="space-y-1 font-medium">
+                        <p class="text-sm text-gray-600 font-normal">Deadline</p>
+                    <h3 class="text-sm">21 March 2025</h3>
+                    </div>
+                    <button class="complete-btn px-3 py-2 rounded-md bg-[#3752FD] text-white text-sm">Completed</button>
+                </div>
+        </div>
+        <!--Cart 05-->
+        <div class="bg-[#2752fd13] p-5 rounded-xl">
+            <div class="flex flex-col space-y-5">
+                <a class="w-1/2 justify-start text-center p-2 rounded-lg text-sm bg-white" href="#">Google LLC</a>
+            <h2 class="text-xl font-medium">Integrate OpenAI API </h2>
+            <p class="truncate bg-white p-4 rounded-lg text-gray-500 text-sm">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+            </div>
+                <hr class="border-t-2 border-dashed border-[#2752fd19] w-full my-4">
+                <div class="flex justify-between items-center">
+                    <div class="space-y-1 font-medium">
+                        <p class="text-sm text-gray-600 font-normal">Deadline</p>
+                    <h3 class="text-sm">21 March 2025</h3>
+                    </div>
+                    <button class="complete-btn px-3 py-2 rounded-md bg-[#3752FD] text-white text-sm">Completed</button>
+                </div>
+        </div>
+        <!--Cart 06-->
+        <div class="bg-[#2752fd13] p-5 rounded-xl">
+            <div class="flex flex-col space-y-5">
+                <a class="w-1/2 justify-start text-center p-2 rounded-lg text-sm bg-white" href="#">Glassdoar</a>
+            <h2 class="text-xl font-medium">Improve Job searching  </h2>
+            <p class="truncate bg-white p-4 rounded-lg text-gray-500 text-sm">Debug using Chrome DevTools,overlapping elements, and ensure onClick works properly
+                and ensure onClick works properly</p>
+            </div>
+                <hr class="border-t-2 border-dashed border-[#2752fd19] w-full my-4">
+                <div class="flex justify-between items-center">
+                    <div class="space-y-1 font-medium">
+                        <p class="text-sm text-gray-600 font-normal">Deadline</p>
+                    <h3 class="text-sm">21 March 2025</h3>
+                    </div>
+                    <button class="complete-btn px-3 py-2 rounded-md bg-[#3752FD] text-white text-sm">Completed</button>
+                </div>
+        </div>
+    </div>
+     <!-- Card section Ends-->
+        
+        
+        
+       
+    </div>
+    
+    
+    <!--Hero section ends-->
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="currentTime.js"></script>
+    <script src="changeBgColor.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
