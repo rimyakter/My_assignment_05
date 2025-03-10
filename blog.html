@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#2752fd13]">
+    <header class="w-[95%] mx-auto p-6 bg-white shadow-md rounded-lg">
+        <!--nav logo-->
+        <div class="flex justify-between ">
+
+            <div class="flex space-x-2">
+                <img class="w-8 h-2/3" src="assets/logo.png" alt="logo">
+                <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <!--nav button-->
+            <div class="flex space-x-2">
+                <button id="blog-btn" class="transition duration-500 ease-in-out cursor-pointer px-4 py-2 rounded-md bg-[#3752FD] text-white">Back to Desk</button>
+            </div>
+        </div>
+
+
+    </header>
+
+    <h1 class="font-bold text-xl text-center my-4 py-4">Blog</h1>
+
+    <section class="flex flex-col space-y-4">
+<!-- Question -01-->
+        <div class="w-[95%] mx-auto p-6 bg-white shadow-sm rounded-lg">
+            <h2 class="text-lg font-bold">Question-1: What are the different ways to select an element in the DOM?</h2>
+            <hr class="border-t-2 border-dashed border-[#2752fd19] w-full my-4">
+            <p class="mb-3">There are many ways to select an element in the DOM.The easiest way to find an HTML element in the DOM is by using the element id. They are:</p>
+            <ul class="w-4/5 mx-auto list-disc">
+            <li>getElementById</li>
+            <li>getElementByClassName</li>
+            <li>getElementByTagName</li>
+            <li>querySelector</li>
+            <li>querySelectorAll</li>
+            </ul>
+        </div>
+
+        <!-- Question -02-->
+        <div class="w-[95%] mx-auto p-6 bg-white shadow-sm rounded-lg">
+            <h2 class="text-lg font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+            <hr class="border-t-2 border-dashed border-[#2752fd19] w-full my-4">
+            <p class="mb-3"><b>innerHTML</b> is used to sets HTML content inside an element.It returns all text, including html tags that is contained by an element.<br>
+               <b>innerText</b> is used to sets the visible text of an element. It returns all text inside an element.<br>
+               <b>textContent</b> is used to sets all text content, including hidden elements. It returns all text, including html tags, that is contained by an element.
+            </p>
+        </div>
+        <!-- Question -03-->
+        <div class="w-[95%] mx-auto p-6 bg-white shadow-sm rounded-lg">
+            <h2 class="text-lg font-bold">Question-3: What is event delegation in the DOM?</h2>
+            <hr class="border-t-2 border-dashed border-[#2752fd19] w-full my-4">
+            <p class="mb-3">Event delegation in the DOM is a technique where a parent element handles events for its child elements instead of attaching event listeners to each child individually.<p>
+        </div>
+        <!-- Question -04-->
+        <div class="w-[95%] mx-auto p-6 bg-white shadow-sm rounded-lg">
+            <h2 class="text-lg font-bold">Question-4:  What is event bubbling in the DOM?</h2>
+            <hr class="border-t-2 border-dashed border-[#2752fd19] w-full my-4">
+            <p class="mb-3">Event bubbling in the DOM is a technique where an event starts at the target element and then propagates upwards through its ancestor elements, all the way to the root.<p>
+        </div>
+
+        <!-- Question -05-->
+        <div class="w-[95%] mx-auto p-6 bg-white shadow-sm rounded-lg mb-4">
+            <h2 class="text-lg font-bold">Question-5:  How do you create, add, and remove elements using JavaScript?</h2>
+            <hr class="border-t-2 border-dashed border-[#2752fd19] w-full my-4">
+        <p class="mb-3">We can create a new element by using <small>document.createElement()</small><br>
+        We can add element once it is created by using methods like:</p>
+            <ul class="w-4/5 mx-auto list-disc">
+            <li>appendChild()</li>
+            <li>append()</li>
+            <li>prepend()</li>
+            <li>innerHTML</li>
+            </ul><br>
+            <p>We can remove elements by using methods like:</p>
+            <ul class="w-4/5 mx-auto list-disc">
+                <li>remove()</li>
+                <li>removeChild()</li>
+                </ul>
+        </div>
+    </section>
+
+
+
+    <!--code for back to main page after click back to button-->
+    <script>
+        const blogBtn = document.getElementById("blog-btn");
+      blogBtn.addEventListener("click", function(){
+      console.log(blogBtn);
+      window.location.href = "index.html";
+});
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="script.js"></script>
+</body>
+</html>

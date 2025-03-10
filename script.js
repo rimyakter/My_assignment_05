@@ -77,4 +77,11 @@ document.querySelectorAll(".complete-btn").forEach((button) => {
 });
 
     
+//code for go to blog page after click discover div
+
+const discoverDiv = document.getElementById("discover");
+discoverDiv.addEventListener("click", function(){
+    window.location.href = "blog.html";
+});
+
 
